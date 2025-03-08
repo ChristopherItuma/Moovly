@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root{
+  --accent:#FF2C1F;
+  --primary:#1f1f1f;
+  --secondary:#ffffff;
+}
+
+@layer components{
+  .accent{
+    background-color: var(--accent)
+  }
+  .navlink{
+    @apply cursor-pointer hover:text-[#ff2c1f] text-2xl md:text-xl
+  }
+  .footer-navlink{
+    @apply cursor-pointer hover:text-black font-bold text-lg md:text-xl text-white
+  }
+  .highlightedText{
+    color:var(--accent);
+    font-weight: 800;
+    
+  }
+}
